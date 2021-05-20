@@ -1,5 +1,7 @@
-import Tasks from './components/Tasks'
 import { useState } from 'react'
+import Header from './components/Header'
+import Tasks from './components/Tasks'
+
 
 const App = () => {
     const [tasks, setTasks] = useState([
@@ -25,6 +27,7 @@ const App = () => {
 
     return (
         <div className='container'>
+            <Header />
             <Tasks tasks={tasks}/>
         </div>
     )
